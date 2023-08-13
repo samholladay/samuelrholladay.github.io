@@ -4,7 +4,7 @@ const submenus = document.querySelectorAll('.submenu');
 menuBtns.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     submenus.forEach((submenu, i) => {
-      if (index === i) {
+      if (index === i + 1) { // +1 to account for the index button
         submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
       } else {
         submenu.style.display = 'none';

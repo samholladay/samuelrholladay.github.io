@@ -1,37 +1,30 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #fff; /* Set the background color to white */
 }
 
 .side-menu {
   width: 200px;
   background-color: #333;
-  color: white;
   padding: 20px;
+  color: white;
 }
 
-.menu-btn {
+.menu-btn,
+.submenu-btn {
   width: 100%;
-  background: none;
+  background-color: white; /* Set the button background color to white */
   border: none;
-  color: white;
+  color: black; /* Set the button text color to black */
   text-align: left;
   padding: 10px;
   cursor: pointer;
 }
 
 .submenu {
-  display: none;
+  display: none; /* Hide submenus by default */
   padding-left: 15px;
-}
-
-.submenu-btn {
-  background: none;
-  border: none;
-  color: white;
-  text-align: left;
-  padding: 5px;
-  cursor: pointer;
 }
 
 .submenu-btn:hover {
