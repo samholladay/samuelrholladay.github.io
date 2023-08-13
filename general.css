@@ -1,13 +1,41 @@
 body {
-       padding: 0px;
-       margin: 0px;
-       background-color: #FFFFFF; /* background-color: #000000;*/
-       text-align: center;
-       font-size: 14px;
-       font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
-       color: #FFFFFF;
-       overflow: auto;
-	   /*Make background white, fades into to blue*/
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.side-menu {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.menu-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.submenu {
+  display: none;
+  padding-left: 15px;
+}
+
+.submenu-btn {
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.submenu-btn:hover {
+  text-decoration: underline;
 }
 
 #title {
