@@ -1,65 +1,83 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff; /* Set the background color to white */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
 }
 
 .side-menu {
-  width: 200px;
-  background-color: #333;
-  padding: 20px;
-  color: white;
+    width: auto; /* Adjust the width as needed */
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
 }
 
-.menu-btn,
-.submenu-btn {
-  width: 100%;
-  background-color: white; /* Set the button background color to white */
-  border: none;
-  color: black; /* Set the button text color to black */
-  text-align: left;
-  padding: 10px;
-  cursor: pointer;
+.menu-button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white; /* Updated background color */
+    border: none;
+    color: black; /* Updated text color */
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .submenu {
-  display: none;
-  padding-left: 15px;
+    display: none;
+    padding-left: 20px;
 }
 
-.submenu-btn:hover {
-  text-decoration: underline;
-}
-.content {
-  flex: 1; /* Expand to fill available space */
-  padding: 20px;
-  background-color: white; /* Set white background color for content */
+.show {
+    display: block;
 }
 
-.content img {
-  max-width: 100%;
-  height: auto;
+.submenu-button {
+    display: block;
+    width: 100%;
+    padding: 5px 20px;
+    background-color: white; /* Updated background color */
+    border: none;
+    color: black; /* Updated text color */
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.icons {
-   position: absolute; bottom: 4px; right: 20px;
-   width: 100%;
-   } 
-   
-.socialIcons img {
-                    height: 35px;
-                    width: 35px;
-                    opacity: 1;
-                    filter: alpha(opacity=40);
-                    margin-right: 2px;
-                }
-                .icons img {
-                    position: relative;
-                   display: inline;
-                    margin-right: 0 auto;
-                   margin-left: 0 auto;
-               }
+.submenu-button:hover {
+    background-color: #666;
+}
+.menu-button:hover {
+    background-color: #555;
+}
 
-               .socialIcons img:hover {
-                    opacity:0.5;
-               }
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: filter 0.3s;
+}
+
+.social-icons img {
+    max-width: 30px; /* Set a maximum width for the icons */
+    height: auto; /* Allow the height to adjust proportionally */
+}
+
+.social-icons a:hover {
+    filter: grayscale(100%);
+}

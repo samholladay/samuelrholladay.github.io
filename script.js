@@ -1,14 +1,16 @@
-const menuBtns = document.querySelectorAll('.menu-btn');
-const submenus = document.querySelectorAll('.submenu');
+const portfolioButton = document.getElementById('portfolioButton');
+const submenu = document.querySelector('.submenu');
+const submenuButtons = document.querySelectorAll('.submenu-button');
 
-menuBtns.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-    submenus.forEach((submenu, i) => {
-      if (index === i + 1) { // +1 to account for the index button
-        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-      } else {
-        submenu.style.display = 'none';
-      }
+portfolioButton.addEventListener('click', () => {
+    submenu.classList.toggle('show');
+});
+
+submenuButtons.forEach(submenuButton => {
+    submenuButton.addEventListener('click', () => {
+        submenuButtons.forEach(btn => {
+            btn.classList.remove('active');
+        });
+        submenuButton.classList.add('active');
     });
-  });
 });
