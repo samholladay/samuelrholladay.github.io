@@ -10,6 +10,8 @@ body {
     background-color: white;
     color: black;
     position: fixed;
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
     top: 0;
     left: 0;
     padding-top: 20px;
@@ -26,6 +28,8 @@ body {
     text-align: left;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
 }
 
 .submenu {
@@ -47,23 +51,26 @@ body {
     text-align: left;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: Tahoma, sans-serif;
+    font-size: 18px; 
 }
 
 .submenu-button:hover {
-    background-color: #666;
+    background-color: #f0f0f0;
 }
 .menu-button:hover {
-    background-color: #555;
+    background-color: #f0f0f0;
 }
 
 .main-content {
-    margin-left: 220px;
+    margin-left: 420px;
     padding: 20px;
+    position: relative; /* Add a relative positioning */
 }
 
 .social-icons {
     text-align: center;
-    padding: 20px;
+    padding-top: 20px; /* Add padding for spacing */
     margin-top: 20px;
 }
 
@@ -80,4 +87,8 @@ body {
 
 .social-icons a:hover {
     filter: grayscale(100%);
+}
+
+a {
+    text-decoration: none; /* Remove underline from all links */
 }

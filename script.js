@@ -7,8 +7,9 @@ screenplayButton.addEventListener('click', () => {
     submenu.classList.toggle('show');
 });
 
-filmButton.addEventListener('click', () => {
-    submenu.classList.toggle('show');
+filmButton.addEventListener('click', () => { // Add this block
+    const filmSubmenu = filmButton.nextElementSibling;
+    filmSubmenu.classList.toggle('show');
 });
 
 submenuButtons.forEach(submenuButton => {
