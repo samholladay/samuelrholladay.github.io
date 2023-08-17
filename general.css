@@ -6,7 +6,7 @@ body {
 }
 
 .side-menu {
-    width: auto; /* Adjust the width as needed */
+    width: 400px; /* Adjust the width as needed */
     background-color: white;
     color: black;
     position: fixed;
