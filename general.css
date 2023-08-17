@@ -23,55 +23,13 @@ body {
 }
 
 .submenu {
-  display: none; /* Hide submenus by default */
+  display: none;
   padding-left: 15px;
 }
 
 .submenu-btn:hover {
   text-decoration: underline;
 }
-
-#title {
-       background-color: #000080;
-       width: 100%;
-	   color: #FFFFFF;
-	   text-align: left;
-       font-size: 20px;
-       opacity: 0.8;
-       /*overflow: auto;*/
-}
-
-#titleContent {
-	width:80%;
-	padding: 1% 0% 1% 15%;
-	background-color: inherit;
-}
-
-#titleContent a:hover {
-    opacity:0.65;
-}
-
-#title a{
-	color: #FFFFFF;
-	text-decoration: none;
-}
-
-#header img {
-	border: 0;
-	width: 70%;
-	padding: 5px 5px 5px 5px;
-	position: fixed;
-	right: 2%;
-	overflow: auto;
-}
-
-.push{margin-bottom: 30px}
-
-.container {
-  display: flex; /* Display side by side */
-  align-items: stretch; /* Stretch both columns to equal height */
-}
-
 .content {
   flex: 1; /* Expand to fill available space */
   padding: 20px;
@@ -86,7 +44,8 @@ body {
 .icons {
    position: absolute; bottom: 4px; right: 20px;
    width: 100%;
-    } 
+   } 
+   
 .socialIcons img {
                     height: 35px;
                     width: 35px;
@@ -96,11 +55,11 @@ body {
                 }
                 .icons img {
                     position: relative;
-                    display: inline;
+                   display: inline;
                     margin-right: 0 auto;
-                    margin-left: 0 auto;
-                }
+                   margin-left: 0 auto;
+               }
 
-                .socialIcons img:hover {
+               .socialIcons img:hover {
                     opacity:0.5;
-                }
+               }
