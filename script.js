@@ -1,8 +1,13 @@
-const portfolioButton = document.getElementById('portfolioButton');
+const screenplayButton = document.getElementById('screenplayButton');
+const filmButton = document.getElementById('filmButton');
 const submenu = document.querySelector('.submenu');
 const submenuButtons = document.querySelectorAll('.submenu-button');
 
-portfolioButton.addEventListener('click', () => {
+screenplayButton.addEventListener('click', () => {
+    submenu.classList.toggle('show');
+});
+
+filmButton.addEventListener('click', () => {
     submenu.classList.toggle('show');
 });
 
